@@ -4,14 +4,14 @@ def diamond(n):
     answer = ""
     spaces = n//2
     times = 1
-    for i in range(n//2+1):
+    for _ in range(n//2+1):
         answer += " "*(spaces)+"*"*times+"\n"
         spaces -= 1
         times +=2
 
     spaces += 2
     times -= 4
-    for i in range(n//2):
+    for _ in range(n//2):
         answer += " "*(spaces)+"*"*times+"\n"
         spaces += 1
         times -=2
